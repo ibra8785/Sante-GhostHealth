@@ -453,3 +453,19 @@ a, a:hover
     font-size: 4rem;
     overflow-y: scroll;
 }
+
+@media screen and (max-width: 1205px)
+{
+    html
+    {
+        font-size: 50%;
+    }
+}
+
+@media screen and (max-width: 768px)
+{
+    html
+    {
+        font-size: 30%;
+    }
+}
