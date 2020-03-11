@@ -1,0 +1,455 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+:root
+{
+    --color-primary: #00b8be;
+    --color-white: white;
+    --color-secondary: #1e91cc;
+    --color-three: #0cb985;
+    --color-gris: #666;
+    --color-footer: #f2f2f2;
+}
+
+*,
+*::before,
+*::after
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html
+{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body
+{
+    overflow-x: hidden;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+a, a:hover
+{
+    text-decoration: none;
+}
+
+/* NAV BAR */
+
+.topNav
+{
+    width: 100%;
+    background-color: white;
+    height: 6rem;
+}
+
+.logo img
+{
+    height: 4rem;
+    width: 4rem;
+}
+
+.logo h1
+{
+    margin-top: auto;
+    margin-left: 1rem;
+    color: var(--color-primary);
+    font-family: 'Righteous', cursive;
+}
+
+.navbar-toggler 
+{
+    background-color: var(--color-primary);
+    color: white;
+}
+
+.navLink li a
+{
+    color: black;
+    font-size: 1.6rem;
+}
+
+.navLink li a:hover
+{
+    color: var(--color-primary);
+    transition: all .5s;
+}
+
+/* HEADER */
+
+.header
+{
+    width: 100%;
+    min-height: 85vh;
+    background-image: linear-gradient(rgba(0,0,0, 0.3), rgba(0,0,0, 0.3)) , url(../img/header.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.titleHaeder
+{
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -35%);
+}
+
+.titleHaeder h1
+{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 6rem;
+    color: var(--color-primary);
+    font-family: 'Righteous', cursive;
+}
+
+.titleHaeder p
+{
+    font-size: 2rem;
+    color: white;
+    background-color: var(--color-primary);
+    text-align: center;
+}
+
+.headerContent
+{
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%, -5%);
+}
+
+.rowContent
+{
+    height: 15rem;
+    width: 100%;
+    background-color: rgba(0, 184, 190, 0.7);
+    margin-bottom: 2rem;
+}
+
+.rowContent h2
+{
+    font-size: 3.2rem;
+    color: var(--color-white);
+    font-weight: bold;
+    padding: 5rem 1.5rem;
+    font-family: 'Righteous', cursive;
+}
+
+/* A PROPOS */
+
+.Apropos
+{
+    min-height: 30rem;
+    padding: 3.5rem 0;
+    width: 100%;
+}
+
+.titleApropos h1
+{
+    color: var(--color-primary);
+    font-weight: bold;
+    font-size: 4rem;
+    font-family: 'Righteous', cursive;
+    margin-bottom: 2rem;
+}
+
+.xp
+{
+    border-right: 1px solid #ccc;
+}
+
+.detailApropos
+{
+    margin-top: 3rem;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+.detailApropos p
+{
+    font-size: 2rem;
+    text-align: justify;
+    color: var(--color-gris);
+}
+
+/* A PROPOS */
+
+.service
+{
+    width: 100%;
+    min-height: 50rem;
+    background-image: linear-gradient(rgba(0,0,0, 0.6), rgba(0,0,0, 0.6)) , url(../img/service.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    padding: 3rem 0;
+    background-attachment: fixed;
+}
+
+.titleService h1
+{
+    font-weight: bold;
+    font-size: 4rem;
+    color: var(--color-white);
+    font-family: 'Righteous', cursive;
+}
+
+.detailService
+{
+    margin-top: 2rem;
+    min-height: 10rem;
+    width: 100%;
+    background-color: rgba(32, 145, 204, 0.3);
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+.detailService h2
+{
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    font-family: 'Righteous', cursive;
+}
+
+.detailService p
+{
+    color: white;
+    font-size: 1.7rem;
+}
+
+/* STAT */
+
+.stat
+{
+    min-height: 10rem;
+    padding: 3.5rem 0;
+    width: 100%;
+    background-color: var(--color-three);
+}
+
+.detailStat h2
+{
+    font-size: 5rem;
+    color: var(--color-white);
+    font-family: 'Righteous', cursive;
+}
+
+.detailStat p
+{
+    font-size: 2rem;
+    color: var(--color-white);
+}
+
+/* EQUIPE */
+
+.equipe
+{
+    min-height: 20rem;
+    width: 100%;
+    padding: 3rem 0;
+}
+
+.titleEquipe h1
+{
+    color: var(--color-primary);
+    font-weight: bold;
+    font-size: 4rem;
+    font-family: 'Righteous', cursive;
+}
+
+.detailEquipe
+{
+    margin-top: 2rem;
+    min-height: 30rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+}
+
+.equipeIllustration img
+{
+    height: 20rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.equipeInfo
+{
+    padding-top: 2rem;
+}
+
+.equipeInfo h2
+{
+    font-family: 'Righteous', cursive;
+}
+
+.equipeInfo p
+{
+    font-size: 1.6rem;
+    color: var(--color-gris);
+}
+
+/* AVIS */
+
+.avis
+{
+    min-height: 20rem;
+    width: 100%;
+    background-color: var(--color-secondary);
+    padding: 3rem 0;
+}
+
+.titleAvis h1
+{
+    color: var(--color-white);
+    font-weight: bold;
+    font-size: 4rem;
+    font-family: 'Righteous', cursive;
+}
+
+.detailAvis
+{
+    margin-top: 5rem;
+}
+
+.avisIllustration
+{
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    background-color: var(--color-white);
+    margin-bottom: 1rem;
+}
+
+.avisIllustration img
+{
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    object-fit: contain;
+}
+
+.avisDesc h2
+{
+    margin: 2rem 0;
+    color: white;
+    font-size: 2.5rem;
+    font-family: 'Righteous', cursive;
+}
+
+.avisDesc p
+{
+    color: white;
+    font-size: 1.6rem;
+    text-align: justify;
+}
+
+/* CONTACT */
+
+.contact
+{
+    min-height: 20rem;
+    width: 100%;
+    padding: 3rem 0;
+}
+
+.titleContact h1
+{
+    color: var(--color-primary);
+    font-weight: bold;
+    font-size: 4rem;
+    font-family: 'Righteous', cursive;
+    margin-bottom: 3rem;
+}
+
+.detailContact
+{
+    padding: 2rem 3rem;
+    margin-top: 1rem;
+}
+
+.detailContact h2
+{
+    font-family: 'Righteous', cursive;
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
+}
+
+.detailContact p
+{
+    font-size: 1.6rem;
+    color: var(--color-gris);
+}
+
+/* FOOTER */
+
+.footer
+{
+    min-height: 20rem;
+    width: 100%;
+    padding: 2.5rem 0;
+    background-color: var(--color-footer);
+}
+
+.detailFooter
+{
+    padding: 2rem;
+}
+
+.detailFooter h2
+{
+    color: var(--color-gris);
+    font-size: 2.5rem;
+    font-family: 'Righteous', cursive;
+}
+
+.sNetwork-Footer img
+{
+    height: 2.5rem;
+    width: 3rem;
+    margin-left: 1rem;
+}
+
+.copyright p
+{
+    margin-top: 2rem;
+    font-size: 1.4rem;
+    color: var(--color-gris);
+}
+
+.newsletter input
+{
+    padding: 1rem 2rem;
+    width: 30rem;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+}
+
+.newsletter .btn-footer
+{
+    padding: 1rem 2rem;
+    font-size: 1.4rem;
+    color: white;
+    border: none;
+    background-color: var(--color-primary);
+}
+
+.newsletter input:focus, .newsletter .btn-footer:focus
+{
+    outline: none;
+}
+
+.fleche a
+{
+    color: var(--color-primary);
+    font-size: 4rem;
+    overflow-y: scroll;
+}
